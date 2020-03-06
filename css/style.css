@@ -58,11 +58,49 @@ body {
 .heading-primary-main {
   display: block;
   font-size: 60px;
-  letter-spacing: 32px;
+  letter-spacing: 30px;
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
 }
 
 .heading-primary-sub {
   display: block;
   font-size: 20px;
   letter-spacing: 18.2px;
+  animation: moveInRight 1s ease-out;
+}
+
+
+/* header animation */
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(80px);
+  }
+
+  80% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
