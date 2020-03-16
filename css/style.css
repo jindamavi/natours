@@ -13,13 +13,17 @@ Dark green: #28b485
   box-sizing: border-box;
 }
 
+html {
+  font-size: 10px;
+}
+
 body {
   font-family: "Lato", sans-serif;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 1.7;
   font-weight: 400;
   color: #777777;
-  padding: 30px;
+  padding: 3rem;
 }
 
 /* header */
@@ -34,12 +38,12 @@ body {
 
 .logo-box {
   position: absolute;
-  left: 40px;
-  top: 40px;
+  left: 4rem;
+  top: 4rem;
 }
 
 .logo {
-  height: 35px;
+  height: 3.5rem;
 }
 
 .text-box {
@@ -54,13 +58,13 @@ body {
   color: #fff;
   text-transform: uppercase;
   font-weight: 400;
-  margin-bottom: 60px;
+  margin-bottom: 6rem;
 }
 
 .heading-primary-main {
   display: block;
-  font-size: 60px;
-  letter-spacing: 30px;
+  font-size: 6rem;
+  letter-spacing: 3rem;
   animation-name: moveInLeft;
   animation-duration: 1s;
   animation-timing-function: ease-out;
@@ -68,8 +72,8 @@ body {
 
 .heading-primary-sub {
   display: block;
-  font-size: 20px;
-  letter-spacing: 18.2px;
+  font-size: 2rem;
+  letter-spacing: 1.82rem;
   animation: moveInRight 1s ease-out;
 }
 
@@ -78,11 +82,11 @@ body {
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-100px);
+    transform: translateX(-10rem);
   }
 
   80% {
-    transform: translateX(10px);
+    transform: translateX(1rem);
   }
 
   100% {
@@ -94,11 +98,11 @@ body {
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    transform: translateX(80px);
+    transform: translateX(8rem);
   }
 
   80% {
-    transform: translateX(-10px);
+    transform: translateX(-1rem);
   }
 
   100% {
@@ -110,7 +114,7 @@ body {
 @keyframes moveInBottom {
   0% {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(3rem);
   }
 
   100% {
@@ -123,8 +127,8 @@ body {
 .btn:link,
 .btn:visited {
   text-transform: uppercase;
-  padding: 15px 40px;
-  border-radius: 100px;
+  padding: 1.5rem 4rem;
+  border-radius: 10rem;
   text-decoration: none;
   display: inline-block;
   transition: all 0.2s;
@@ -136,7 +140,7 @@ body {
   width: 100%;
   height: 100%;
   display: inline-block;
-  border-radius: 100px;
+  border-radius: 10rem;
   position: absolute;
   top: 0;
   left: 0;
@@ -146,7 +150,7 @@ body {
 
 .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 .btn:hover::after {
