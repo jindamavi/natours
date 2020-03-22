@@ -1,7 +1,7 @@
-@mixin clearfix {
-    &::after {
-        content: '';
-        display: table;
-        clear: both;
-    }
+.u-center-text {
+    text-align: center;
+}
+
+.u-margin-bottom-8 {
+    margin-bottom: 8rem;
 }
